@@ -1,0 +1,64 @@
+body {
+    background-color: #fdd7ae;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(10, 50px);
+    padding: 10px;
+    aspect-ratio: 1/1;
+    width: 100vw;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 40px 100px 100px;
+}
+.cell {
+    width: 50px; /* Modifier la taille de chaque cellule en fonction de votre choix */
+    height: 50px;
+    background-color: #fdd7ae;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.wall {
+    background-image: url(wall.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.box {
+    background-image: url(box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.player {
+    background-image: url(link.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.target {
+    background-color: rgb(122, 69, 25);
+    border: none;
+    z-index: 1;
+}
+.empty {
+    border: none;
+}
+.on-target {
+    background-color: rgb(35, 172, 26);
+}
+
